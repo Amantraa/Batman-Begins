@@ -1,0 +1,76 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled2.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyPWfz4AtNtXOLpc44qiVpw5",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Amantraa/Batman-Begins/blob/main/Class%20100\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 3,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Vm7U1nnzzog5",
+        "outputId": "e841e813-a1b2-4095-bb41-49004607185b"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "stop\n",
+            "None\n"
+          ]
+        }
+      ],
+      "source": [
+        "class Car(object):\n",
+        "  def __init__(self,company_brand, model, color, speed_limit):\n",
+        "    self.company_brand = company_brand\n",
+        "    self.model = model\n",
+        "    self.color = color\n",
+        "    self.speed_limit = speed_limit\n",
+        "  \n",
+        "  def start(self):\n",
+        "    print(\"started\")\n",
+        "  \n",
+        "  def accelerate(self):\n",
+        "    print(\"accelerate\")\n",
+        "\n",
+        "  def stop(self):\n",
+        "    print(\"stop\")\n",
+        "\n",
+        "BMW = Car('BMW', '5 series', 'blue', '220')\n",
+        "AUDI = Car('AUDI', '8th Gen', 'white', '240')\n",
+        "\n",
+        "BMW.color\n",
+        "AUDI.model\n",
+        "print(AUDI.stop())"
+      ]
+    }
+  ]
+}
